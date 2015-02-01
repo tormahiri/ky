@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <meta charset ="utf-8"name="viewport" content="width=device-width, initial-scale=1">
+  <title>kolayjs</title>
+  <link rel="stylesheet" href="css/mini.css">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+ <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+   <ol class="breadcrumb">
+ <li><a href="index.html" target="_blank">باش بەت</a></li>
+  <li><a href="sanlar.html" target="_blank">سانلار</a></li>
+  <li><a href="hariplar.html" target="_blank">ھەرىپلەر</a></li>
+    <li><a href="hujjat.html" target="_blank">ھۆججەت</a></li>
+
+</ol>
+  </div>
+</nav>
+</br>
+<!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>قولايjs</h1>
+      </div>
+   
+         <h3>  سانلار ئىغىزى تەمىنلىگەن فۇنكسيەلەر</h3>
+          سانلار ئىغىزى kanqa()نامىدىكى فۇنكىسيەنى تەمىنلىگەن بولۇپ بىز بۇ فۇنكىسيە بىلەن سانلار گۇرۇپپىسىدىكى ئېلىمىتنلارنىڭ سانىنى ئالالايمىز
+         <pre>
+          san=require("kolayjs").sanlar();
+             sanlarguruppsii=[1,2,3];
+             san.sanlar().kanqa(sanlarguruppsii);// 3
+         </pre>
+         <hr>
+         Agkayniفۇنكىسيەسى ،بۇفۇنكىسيە سانلار گۇرۇپپىسدىكى ئەڭ ئاخرىقى ئېلمىتنى قايتۇرىدۇ
+       </hr>
+       <pre>
+       san.sanlar().Agkayni(["a","b","c"]);
+       </pre>
+       <hr>
+      Aldiayrish فۇنكىسيەسى سانلار گۇرۇپپىسدىكى بىرىنجى ئىلېمنتىنى ئۆچۈرۋىتىدۇ
+      <pre>
+         san.sanlar().Aldiayrish([1,2,3]);
+      </pre>
+      
+     </hr>
+     Agkayni فۇنكىسيەسى سانلار گۇرۇپپىسدىكى ئەڭ ئاخرقى ئىلىمنتى قايتۇرىدۇ
+     <pre>
+       san.sanlar().Agkayni(["a","b","salam"]);
+     </pre>
+      </p>
+         <hr>
+         Kaynioqurush فۇنكىسيەسى سانلار گۇرۇپپىسدىكى ئەڭ ئاخرقى ئىلمىنتى ئۆچۈرىدۇ
+         <pre>
+san.sanlar().Kaynioqurush(["alim","maxhur","daglik"]) 
+// natija daglik uqidu
+         </pre>
+       </hr>
+       taturTezish()فۇنكىسيەسى سانلار گۇرۇپپىسدىكى سانلارنى چوڭ كىچىكلىكى بويىچە تۈرگە ئاريىپ ئاندىن تەتۈرۈ ھالەتتە رەتلەپ بىرىدۇ
+       <pre>
+san.sanlar().taturTezish([12,24,45,78,10,4,8,16,34,55]);
+natejisi // 78,55,45,34,24,16,12,10,8,4
+       </pre>
+       Birlash()فۇنكىسيەسى سانلار سانلارگۇرۇپپىسدىكى ئىچكى گۇرۇپپىلارنى بىرلەشتۈرىدۇ
+       <pre>
+san.sanlar().Birlash([[0,2],[1,3]])
+natejisi // 0,2,1,3
+       </pre>
+       <hr>
+
+ ilgash()فۇنكىسيەسى سانلار گۇرۇپپسىدىكى مەلۇم بىر ئىلىمتنى ئىلغىۋىتىپ باشقا ئىلمنتى ئوقۇپ بىرىدۇ,بۇفۇنكىسيە ئىككى پارامىتىر قۇبۇل قىلدىغان بولۇپ،بىرىنجىسى سانلار گۇرۇپپسى،ئىككىنجى پارامىتىر ئىلغىماقچى بولغان قىممەت
+  <pre>
+    var il=san.sanlar().ilgash(["tormahiri","2014","kolayjs"],"2014");
+console.log(il)
+// natija [ 'tormahiri', 'kolayjs' ]
+  </pre>
+     </hr>
+   suzush() فۇنكىسيەسى sanlar() ئىغىزىغا تەۋەپ بولۇپ،بۇ فۇنكىسيە سانلار گۇرۇپپىسدىكى ئوخشاش قىممەتلەرنى سۈزۈۋىتىدۇ،بۇفۇنكىسيە
+   بىردانە پارامىتىر قۇبۇل قىلىدۇ،پارامىتىر چوقۇم سانلارگۇرۇپپىسى بولۇشى كىرەك،بولمىسا خاتالىق يۈز بىرىدۇ
+     <pre>
+       san.sanlar().suzush(["tormahiri","uyghur","asselam","assalam",1,2,3,1,2]);
+       //[ 'tormahiri', 'uyghur', 'asselam', 'assalam', 3, 1, 2 ]
+       
+     </pre>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">تورماھىرى 2014</p>
+      </div>
+    </footer>
+
+
+
+</body>
+</html>

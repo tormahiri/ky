@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta charset ="utf-8"name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>kolayjs</title>
+  <link rel="stylesheet" href="css/mini.css">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+            <script src="parse-1.3.4.min.js"></script>
+    <script type="text/javascript">
+Parse.initialize("hQWftQt5eQRpD42DoAt5a1qtkbj5ELxzc3Wf0day", "PVs8bX49QkDWCyoSa6P2g3TeUj6JH1Xrb0m5sY8g");
+
+    var count=0;
+        function load () {
+            var cls=count++;
+            console.log(cls);
+        }
+        load();
+var dimensions = {
+  // What type of news is this? 
+  category: 'politics',
+  // Is it a weekday or a weekend?
+  dayType: 'weekday'
+};
+// Send the dimensions to Parse along with the 'search' event
+ 
+Parse.Analytics.track('read', dimensions);
+    </script>
+</head>
+<body>
+ <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+   <ol class="breadcrumb">
+  <li><a href="index.html" target="_blank">باش بەت</a></li>
+  <li><a href="sanlar.html" target="_blank">سانلار</a></li>
+  <li><a href="hariplar.html" target="_blank">ھەرىپلەر</a></li>
+  <li><a href="hujjat.html" target="_blank">ھۆججەت</a></li>
+</ol>
+  </div>
+</nav>
+</br>
+<!-- Begin page content -->
+    <div class="container">
+      <div class="jumbotron">
+ <h1>kolayjs دىگەن نىمە؟</h1>
+ kolayjs بولسا node.js سۇپىسىدا ئىجرا بولىدىغان javascript تىلدىن پايدىلنىپ يىزىلغان node.js مودىلى بولۇپ ،بۇ مودىل ئالگورىتىمغا مۇناسىۋەتلىك ئۇچۇرلارنى بىرتەرەپ قىلالايدۇ،جۈملىدىن سانلار گۇرۇپپىسى ،ھەرىپلەر تىزمىسى،ۋە ھۆججەت مەشغۇلاتىنى ئۆز ئىچىگە ئالىدۇ،بۇ مودىل سانلار گۇرۇپىسى،ھەرىپلەر تىزمىسى ۋە ھۆججەتلەرنى بىرتەرەپ قىلىدىغان نورغۇنلىغان فۇنكىسيەلەرنى ئۆز ئىچىگە ئالغان بولۇپ ،بىز kolayjs تەمىنلىگەن مۇشۇ فۇنكىسيەلەردىن پايدىلىنىپ ماس ھالدىكى مەشغۇلاتنى بىرتەرەپ قىلالايمىز
+</p>
+ 
+</div>
+      <div class="page-header">
+        
+      </div>
+      <p class="lead">
+         <div class="alert alert-info" role="alert">
+       <a href="http://tormahiri.github.io/blog/javascript/2014/11/23/nodejs-hakkida-tormahiri.html">
+        ئالدى بىلەن بارلىق مەشغۇلاتلارنى قىلشتىن بۇرۇن ‹‹node.jsزادى نىمە؟››دىگەن بۇماقالىنى كۆرۈڭ
+       </a>
+         </div>
+      <p>
+
+قولايjs نى قاچىلاش ئۈچۈن ئالدى بىلەن سىنزىڭ كومپيۇتېرىڭزغا nodejs سۇپىسى قاچىلانغان بولۇشى كىرەك ،قولاي nodejs سۇپىسىدا يىزىلغان بولۇپ،قولاي js نىڭ نورمال خىزمەت قىلىشى ئۈچۈن نودى سۇپىسى تەلەپ قىلىنىدۇ ،نودى سۇپىسىنى قاچىلاش ئۈچۈن باش بىتىگە كىرىپ ۋىندوۋس دا ئىجرا بولىدىغان نۇسخىسنى تاللاپ قاچىلۋەتسڭىزلا بولىدۇ،قاچىلاش ئۇسۇلى ئادەتتىكى ۋىندوۋس دېتاللىرىنى قاچىلغانغا ئوخشاش،ئاندىن تۆۋەندىكى بۇيرۇقنى ئىجرا قىلىپ kolayjsنى قاچىلايسىز
+     <pre>
+     npm install kolayjs
+      </pre>
+      قولايjsئۈچ دانە api ئىغىزى تەمىنلىگەن بولۇپ،ھەربىر ئىغىزدا نورغۇنلىغان فۇنكىسيەلەربار ،بىز مۇشۇ فۇنكىيسەنى چاقىرىش ئارقىلىق ماس ھالدىكى مەشغۇلاتلارنى بىر تەرەپ قىلالايمىز
+    </br>
+    <h3>قولايjs تەمىنلىگەن api نى ئىشلىتىش</h3>
+     قولاي js تەمىنلىگەن ئۈچ چڭ ئىغىز بۇلار تۆۋەندىكىچە
+     <pre>
+     sanlar();
+hariplar();
+hujjat();
+     </pre>
+     بۇ ئۈچ ئىغىزنىڭ ئايرىم ئايرىم ھالدا نورغۇنلىغان فۇنكىسيەلىرى بار،ئەگەر بىز سانلار گۇرۇپپىسىغا مۇناسىۋەتلىك ئۇچۇرنى بىر تەرەپ قىلامقچى بولساق،sanlar ئىغىزنى ئىشلىتىمىز،ئەگەر بىز ھەرىپ بەلگىلەرگە مۇناسىۋەتلىك مەشغۇلاتنى بىرتەرەپ قىلماقچى بولساق ھەرىپلەر ئىغىزنى ئىشلىتمىز،ھۆججەت ئىغىزىمۇ مۇۇشنىڭغا ئوخشاش.
+<h2>
+بۇ ئۈچ ئىغىزغا ئۇلاش ئۇسۇلى:
+</h2>
+<pre>
+ san=require("kolayjs").sanlar();
+ harip=require("kolayjs").hariplar();
+ hujjat=require("kolayjs").hujjat();
+</pre>
+بۇ ئۈچ ئىغىزنىڭ قايسىسىنى ئىشلەتمەكچى بولساق يۇقارقى شەكلىدە ئۇلاپ ئىشلەتسەك بولىدۇ،ئاندىن بىز ماس ھالدىكى فۇنكىسيەلەرگە كىرەلەيمىز،بۇ قولاي js مودىلىنىڭ نورمال خىزمەت قىلىشى ئۈچۈن يۇقارقى شەكىلدە ئۇلىنىشى كىرەك،بولمىسا خاتالىق يۈز بىرىدۇ
+
+     
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">تورماھىرى 2014</p>
+      </div>
+    </footer>
+
+
+
+</body>
+</html>
